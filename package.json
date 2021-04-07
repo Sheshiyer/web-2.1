@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "gsap": "^3.6.1",
+    "three": "^0.127.0"
+  }
+}
