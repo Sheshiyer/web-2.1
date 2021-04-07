@@ -6,4 +6,7 @@
     "gsap": "^3.6.1",
     "three": "^0.127.0"
   }
+  "scripts": {
+    "dev": "lite-server"
+  }
 }
