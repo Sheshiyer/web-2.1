@@ -342,17 +342,18 @@
     <div class="js-smooth-scroll bg-dark-1" id="page-wrapper" data-barba="container">
       <main class="page-wrapper__content">
         <!-- section MASTHEAD -->
-        <section class="section section-masthead section-fullheight text-center bg-dark-1"
-          data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light"
+        <section class="section section-masthead section-fullheight text-center bg-dark-4"
+          data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="dark"
           data-background-color="var(--color-dark-1)">
           <div class="section-masthead__inner section-fullheight__inner container-fluid">
             <header class="row section-masthead__header justify-content-center">
               <div class="col">
+                <div class="section-masthead__heading split-text js-split-text overflow" data-split-text-type="lines,chars" data-split-text-set="chars">
+                  <h1 class="xl mt-0 mb-0">Sense.Play</h1>
+                </div>
                 <div class="w-100">
-                  <div class="section-masthead__subheading h1 mt-0-5 split-text js-split-text"
-                    data-split-text-type="lines,words" data-split-text-set="words"><span>Self awareness
-                      technology</span></div>
-                </div>                
+                  <div class="section-masthead__subheading h4 mt-0-5 split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words"><span>Self Awareness Technology</span></div>
+                </div>                 
               </div>
               <div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_center">
                 <div class="circle-button js-circle-button" data-arts-os-animation="true">
@@ -414,7 +415,7 @@
               </div>
             </div>
             <!-- overlay-->
-            <div class="overlay overlay_bottom-dark section-masthead__overlay"></div>
+            <div class="overlay overlay_bottom-light section-masthead__overlay"></div>
             <!-- - overlay -->
           </div>
         </section>
@@ -978,9 +979,9 @@
             <div class="row row-gutters justify-content-center">
               <div class="col-lg-3 col-gutters">
                 <div class="section-grid__item">
-                  <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-1.png" alt=""/>
+                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-1.png" alt=""/>
                     <div class="figure-logo__description">
-                      <p>Vintage Handmade</p>
+                      <p>Soulfie Intl.</p>
                       <div class="figure-logo__line"></div>
                     </div>
                   </div>
@@ -988,9 +989,9 @@
               </div>
               <div class="col-lg-3 col-gutters">
                 <div class="section-grid__item">
-                  <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-2.png" alt=""/>
+                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-2.png" alt=""/>
                     <div class="figure-logo__description">
-                      <p>A &amp; G Collection</p>
+                      <p>Connected Experience</p>
                       <div class="figure-logo__line"></div>
                     </div>
                   </div>
@@ -998,9 +999,9 @@
               </div>
               <div class="col-lg-3 col-gutters">
                 <div class="section-grid__item">
-                  <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-3.png" alt=""/>
+                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-3.png" alt=""/>
                     <div class="figure-logo__description">
-                      <p>Steak House</p>
+                      <p>Our World</p>
                       <div class="figure-logo__line"></div>
                     </div>
                   </div>
@@ -1008,9 +1009,9 @@
               </div>
               <div class="col-lg-3 col-gutters">
                 <div class="section-grid__item">
-                  <div class="figure-logo grayscale bg-white"><img src="img/assets/sectionLogos/logo-4.png" alt=""/>
+                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-4.png" alt=""/>
                     <div class="figure-logo__description">
-                      <p>LSE</p>
+                      <p>Sensistan </p>
                       <div class="figure-logo__line"></div>
                     </div>
                   </div>
@@ -1174,7 +1175,7 @@
       varying vec2 vUv;
       
       vec2 scaleUV(vec2 uv,float scale) {
-        float center = 0.5;
+        float center = 0.316;
         return ((uv - center) * scale) + center;
       }
       
