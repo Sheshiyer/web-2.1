@@ -2,7 +2,7 @@
 
 if ( $_POST ) {
 
-	$frm_name  = 'Senseplay Team'; // your name
+	$frm_name  = 'SenseplayTeam'; // your name
 	$recepient = 'mysenseplay@gmail.com'; // your e-mail
 	$sitename  = 'Senseplay_website'; // your site name
 	$subject   = "New contact from \"$sitename\""; // subject template
