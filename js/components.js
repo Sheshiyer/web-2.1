@@ -6,7 +6,7 @@
  * ==========================================================================
  * ==========================================================================
  * 
- * Rhye – AJAX Portfolio HTML5 Template
+ * Senseplay ~ Self awareness technologies using bio-feedback
  * 
  * [Table of Contents]
  * 
