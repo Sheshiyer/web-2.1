@@ -9,7 +9,8 @@
     <meta content="telephone=no" name="format-detection" />
     <meta name="HandheldFriendly" content="true" />
     <!-- Google Fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" />
     <!-- Template Vendor's Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/vendor.css" />
     <!-- Template Main Stylesheet -->
@@ -35,8 +36,8 @@
     <link rel="icon" type="image/x-icon" href="img/content/favicon.ico" />
     <!-- Hotjar Tracking Code for www.senseplay.me -->
     <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
                 (h.hj.q = h.hj.q || []).push(arguments)
             };
             h._hjSettings = {
@@ -49,27 +50,19 @@
             r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-
     </script>
-    <!-- Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKY60XVQS"></script>
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5JF7SC3');
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NBKY60XVQS');
     </script>
-    <!-- End Google Tag Manager -->
 </head>
 
 <body>
@@ -84,7 +77,10 @@
                 </div>
                 <!-- - header -->
                 <!-- counter -->
-                <div class="preloader__counter h5"><span class="preloader__counter-number preloader__counter-current">0</span><span class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span class="preloader__counter-number preloader__counter-total">100</span></div>
+                <div class="preloader__counter h5"><span
+                        class="preloader__counter-number preloader__counter-current">0</span><span
+                        class="preloader__counter-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span><span
+                        class="preloader__counter-number preloader__counter-total">100</span></div>
                 <!-- - counter -->
                 <!-- circle holder -->
                 <div class="preloader__circle"></div>
@@ -93,8 +89,10 @@
         </div>
         <!-- - PAGE PRELOADER -->
         <!-- Loading Spinner -->
-        <svg class="spinner d-lg-none" id="js-spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-            <circle class="spinner__path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+        <svg class="spinner d-lg-none" id="js-spinner" width="65px" height="65px" viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle class="spinner__path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+            </circle>
         </svg>
         <!-- - Loading Spinner -->
         <!-- Transition Curtain-->
@@ -102,17 +100,28 @@
         <!-- page curtain AJAX transition -->
         <div class="curtain transition-curtain" id="js-page-transition-curtain">
             <div class="curtain__wrapper-svg">
-                <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Default Rectangle -->
-                    <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+                    <path class="curtain-svg__normal"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+                    </path>
                     <!-- - Default Rectangle -->
                     <!-- Curve Top -->
-                    <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
-                    <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+                    <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+                    </path>
                     <!-- - Curve Top -->
                     <!-- Curve Bottom -->
-                    <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
-                    <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+                    </path>
                     <!-- - Curve Bottom -->
                 </svg>
             </div>
@@ -121,17 +130,28 @@
         <!-- header curtain show/hide -->
         <div class="header-curtain curtain" id="js-header-curtain">
             <div class="curtain__wrapper-svg">
-                <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Default Rectangle -->
-                    <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+                    <path class="curtain-svg__normal"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+                    </path>
                     <!-- - Default Rectangle -->
                     <!-- Curve Top -->
-                    <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
-                    <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+                    <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+                    </path>
                     <!-- - Curve Top -->
                     <!-- Curve Bottom -->
-                    <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
-                    <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+                    </path>
                     <!-- - Curve Bottom -->
                 </svg>
             </div>
@@ -140,17 +160,28 @@
         <!-- header curtain AJAX transition -->
         <div class="header-curtain header-curtain_transition curtain" id="js-header-curtain-transition">
             <div class="curtain__wrapper-svg">
-                <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg class="curtain-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Default Rectangle -->
-                    <path class="curtain-svg__normal" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+                    <path class="curtain-svg__normal"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+                    </path>
                     <!-- - Default Rectangle -->
                     <!-- Curve Top -->
-                    <path class="curtain-svg__curve curtain-svg__curve_top-desktop" d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z"></path>
-                    <path class="curtain-svg__curve curtain-svg__curve_top-mobile" d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z"></path>
+                    <path class="curtain-svg__curve curtain-svg__curve_top-desktop"
+                        d="M0,300 C305.333333,100 625.333333,0 960,0 C1294.66667,0 1614.66667,100 1920,300 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,300 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_top-mobile"
+                        d="M0,150 C305.333333,50 625.333333,0 960,0 C1294.66667,0 1614.66667,50 1920,150 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,150 Z">
+                    </path>
                     <!-- - Curve Top -->
                     <!-- Curve Bottom -->
-                    <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
-                    <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile" d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z"></path>
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-desktop"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+                    </path>
+                    <path class="curtain-svg__curve curtain-svg__curve_bottom-mobile"
+                        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1030 1294.66667,1005 960,1005 C625.333333,1005 305.333333,1030 0,1080 L0,0 Z">
+                    </path>
                     <!-- - Curve Bottom -->
                 </svg>
             </div>
@@ -164,7 +195,8 @@
                 <div class="cursor__follower">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <circle id="inner" cx="25" cy="25" r="24" style="opacity: 0.6;"></circle>
-                        <circle id="outer" cx="25" cy="25" r="24" style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
+                        <circle id="outer" cx="25" cy="25" r="24"
+                            style="stroke-dashoffset: 252.327; stroke-dasharray: 0px, 999999px;"></circle>
                     </svg>
                 </div>
                 <!-- - circles -->
@@ -186,7 +218,10 @@
         </div>
         <!-- - Cursor Follower-->
         <!-- PAGE HEADER -->
-        <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header" data-arts-theme-text="light" data-arts-header-sticky-theme="bg-light-1" data-arts-header-logo="secondary" data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light" data-arts-header-overlay-background="#f2f1ed">
+        <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header"
+            data-arts-theme-text="light" data-arts-header-sticky-theme="bg-light-1" data-arts-header-logo="secondary"
+            data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light"
+            data-arts-header-overlay-background="#f2f1ed">
             <!-- top bar -->
             <div class="header__container header__controls">
                 <div class="row justify-content-between align-items-center">
@@ -319,19 +354,25 @@
         <div class="js-smooth-scroll bg-white" id="page-wrapper" data-barba="container">
             <main class="page-wrapper__content">
                 <!-- section MASTHEAD FULLSCREEN -->
-                <section class="section section-masthead section-fullheight text-left bg-dark-1" data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light" data-background-color="var(--color-dark-1)">
+                <section class="section section-masthead section-fullheight text-left bg-dark-1"
+                    data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light"
+                    data-background-color="var(--color-dark-1)">
                     <div class="section-masthead__inner section-fullheight__inner container-fluid">
                         <header class="row section-masthead__header justify-content-center">
                             <div class="col">
-                                <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words"><span>Get Started</span></div>
+                                <div class="section-masthead__subheading small-caps mt-0 mb-1 mb-md-2 split-text js-split-text"
+                                    data-split-text-type="lines,words" data-split-text-set="words"><span>Get
+                                        Started</span></div>
                                 <div class="w-100"></div>
-                                <div class="section-masthead__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                                <div class="section-masthead__heading split-text js-split-text"
+                                    data-split-text-type="lines,words" data-split-text-set="words">
                                     <h1 class="h1 mt-0 mb-0">Encompassing </h1>
                                 </div>
                                 <div class="w-100"></div>
                                 <div class="section__headline mt-2 mr-auto"></div>
                             </div>
-                            <div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_left">
+                            <div
+                                class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_left">
                                 <div class="circle-button js-circle-button" data-arts-os-animation="true">
                                     <!-- curved label -->
                                     <div class="circle-button__outer">
@@ -342,26 +383,39 @@
                                     <!-- - curved label -->
                                     <!-- geometry wrapper -->
                                     <div class="circle-button__inner">
-                                        <div class="circle-button__circle" data-arts-scroll-down="data-arts-scroll-down" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0">
-                                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <div class="circle-button__circle" data-arts-scroll-down="data-arts-scroll-down"
+                                            data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true"
+                                            data-arts-cursor-scale="0">
+                                            <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
                                             </svg>
                                         </div>
                                         <!-- browsers with touch support -->
                                         <div class="circle-button__icon circle-button__icon-touch">
-                                            <svg enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z"></path>
+                                            <svg enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64"
+                                                width="512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z">
+                                                </path>
                                             </svg>
                                         </div>
                                         <!-- - browsers with touch support -->
                                         <!-- - browsers without touch support -->
                                         <div class="circle-button__icon circle-button__icon-mouse">
-                                            <svg class="svg-mouse" width="23px" height="35px" viewBox="0 0 23 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <svg class="svg-mouse" width="23px" height="35px" viewBox="0 0 23 35"
+                                                version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <!-- border -->
-                                                <path class="svg-mouse__border" d="M11.5,0 C5.15875132,0 0,5.23135343 0,11.6610111 L0,23.3396542 C0,29.7691456 5.15875132,35 11.5,35 C17.8412487,35 23,29.7693119 23,23.3396542 L23,11.6610111 C23,5.23135343 17.8410847,0 11.5,0 Z M21.7222404,23.3396542 C21.7222404,29.0545544 17.136538,33.7037222 11.5,33.7037222 C5.86346203,33.7037222 1.27775956,29.0545544 1.27775956,23.3396542 L1.27775956,11.6610111 C1.27775956,5.946111 5.86346203,1.29627781 11.5,1.29627781 C17.136538,1.29627781 21.7222404,5.94594466 21.7222404,11.6610111 L21.7222404,23.3396542 Z"></path>
+                                                <path class="svg-mouse__border"
+                                                    d="M11.5,0 C5.15875132,0 0,5.23135343 0,11.6610111 L0,23.3396542 C0,29.7691456 5.15875132,35 11.5,35 C17.8412487,35 23,29.7693119 23,23.3396542 L23,11.6610111 C23,5.23135343 17.8410847,0 11.5,0 Z M21.7222404,23.3396542 C21.7222404,29.0545544 17.136538,33.7037222 11.5,33.7037222 C5.86346203,33.7037222 1.27775956,29.0545544 1.27775956,23.3396542 L1.27775956,11.6610111 C1.27775956,5.946111 5.86346203,1.29627781 11.5,1.29627781 C17.136538,1.29627781 21.7222404,5.94594466 21.7222404,11.6610111 L21.7222404,23.3396542 Z">
+                                                </path>
                                                 <!-- - border -->
                                                 <!-- wheel -->
-                                                <path class="svg-mouse__wheel" d="M11.5,4 C11.2238902,4 11,4.28321727 11,4.63321727 L11,10.3667827 C11,10.7167827 11.2238902,11 11.5,11 C11.7761098,11 12,10.7167827 12,10.3667827 L12,4.63321727 C11.9998717,4.28321727 11.7761098,4 11.5,4 Z"></path>
+                                                <path class="svg-mouse__wheel"
+                                                    d="M11.5,4 C11.2238902,4 11,4.28321727 11,4.63321727 L11,10.3667827 C11,10.7167827 11.2238902,11 11.5,11 C11.7761098,11 12,10.7167827 12,10.3667827 L12,4.63321727 C11.9998717,4.28321727 11.7761098,4 11.5,4 Z">
+                                                </path>
                                                 <!-- - wheel -->
                                             </svg>
                                         </div>
@@ -373,7 +427,8 @@
                         </header>
                     </div>
                     <div class="section-image section-masthead__background section-masthead__background_fullscreen">
-                        <div class="section-image__wrapper js-transition-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                        <div class="section-image__wrapper js-transition-img" data-arts-parallax="data-arts-parallax"
+                            data-arts-parallax-factor="0.15">
                             <div class="js-transition-img__transformed-el">
                                 <div class="lazy-bg" data-src="img/assets/projects/project-7.jpg"></div>
                             </div>
@@ -387,13 +442,19 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <section class="section section-content clearfix pt-medium pb-medium text-center" data-arts-os-animation="data-arts-os-animation">
+                            <section class="section section-content clearfix pt-medium pb-medium text-center"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
                                     <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
-                                        <h6>The data shows that people who are depressed don’t want to use self-improvement apps (only about 3% will complete a regimen in these apps). At the same time, people with severe depression still play games as much as people who aren’t experiencing depression. So gaming is a promising avenue for introducing mental health interventions.</h6>
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
+                                        <h6>The data shows that people who are depressed don’t want to use
+                                            self-improvement apps (only about 3% will complete a regimen in these apps).
+                                            At the same time, people with severe depression still play games as much as
+                                            people who aren’t experiencing depression. So gaming is a promising avenue
+                                            for introducing mental health interventions.</h6>
                                     </div>
                                 </div>
                             </section>
@@ -401,39 +462,50 @@
                     </div>
                 </div>
                 <!-- - section CONTENT #1 -->
-                
+
                 <!-- section IMAGE #1 -->
                 <section class="section section-image section_h-800">
-                    <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                    <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                        data-arts-parallax-factor="0.15">
                         <div>
                             <div class="lazy-bg" data-src="img/assets/project7/img-7-1.jpg"></div>
                         </div>
                     </div>
                 </section>
-                 <!-- sections CONTENT & IMAGE #2 -->
-                 <div class="container-fluid no-gutters">
+                <!-- sections CONTENT & IMAGE #2 -->
+                <div class="container-fluid no-gutters">
                     <div class="row no-gutters align-items-center">
                         <div class="col-lg-6">
-                            <section class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings" data-arts-os-animation="data-arts-os-animation">
+                            <section
+                                class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
                                     <div class="section__headline mb-1 mb-md-2"></div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
                                         <h2>Group Biofieedback</h2>
                                     </div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines" data-split-text-set="lines">
-                                        <p>A group can use Senseplay for sharing physical space or holding an online meeting. A sense play zoom meeting can become more interactive and alive with input in the form of biofeedback data. </p>
+                                    <div class="section-content__text split-text js-split-text mt-1"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>A group can use Senseplay for sharing physical space or holding an online
+                                            meeting. A sense play zoom meeting can become more interactive and alive
+                                            with input in the form of biofeedback data. </p>
                                         <p>
-                                            Sensory play makes the immersive sensory experience in physical spaces even more interactive. The group meditations can use senseplay to enable synchronization between biofeedback data from various audience members and generative music to create flow states.</p>
+                                            Sensory play makes the immersive sensory experience in physical spaces even
+                                            more interactive. The group meditations can use senseplay to enable
+                                            synchronization between biofeedback data from various audience members and
+                                            generative music to create flow states.</p>
                                     </div>
                                 </div>
                             </section>
                         </div>
                         <div class="col-lg-6">
                             <section class="section section-image section_h-800">
-                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                                    data-arts-parallax-factor="0.15">
                                     <div>
                                         <div class="lazy-bg" data-src="img/assets/project7/img-7-1a.jpg"></div>
                                     </div>
@@ -448,18 +520,28 @@
                 <div class="container-fluid no-gutters">
                     <div class="row no-gutters align-items-center">
                         <div class="col-lg-6 order-lg-2">
-                            <section class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings" data-arts-os-animation="data-arts-os-animation">
+                            <section
+                                class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
                                     <div class="section__headline mb-1 mb-md-2"></div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                                    <div class="section-content__heading split-text js-split-text mb-1"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
                                         <h2>Affective Gaming</h2>
                                     </div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                                        <p>Essentially the ability for a game to have a subconscious two-way “conversation” with a player via a sensory input device (such as a heart rate sensor, emotion responsive technology, or a neurofeedback instrument). </p>
-                                        <div class="section-masthead__wrapper-button mt-xsmall"><a class="button button_bordered button_dark" data-hover="PREVIEW" href="project-details-10a-halfscreen-left-right.html"><span class="button__label-hover">EXPLORE</span></a>
+                                    <div class="section-content__text split-text js-split-text"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>Essentially the ability for a game to have a subconscious two-way
+                                            “conversation” with a player via a sensory input device (such as a heart
+                                            rate sensor, emotion responsive technology, or a neurofeedback instrument).
+                                        </p>
+                                        <div class="section-masthead__wrapper-button mt-xsmall"><a
+                                                class="button button_bordered button_dark" data-hover="PREVIEW"
+                                                href="project-details-10a-halfscreen-left-right.html"><span
+                                                    class="button__label-hover">EXPLORE</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -467,7 +549,8 @@
                         </div>
                         <div class="col-lg-6 order-lg-1 bg-white">
                             <section class="section section-image section_h-800">
-                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                                    data-arts-parallax-factor="0.15">
                                     <div>
                                         <div class="lazy-bg" data-src="img/assets/project7/img-7-2.jpg"></div>
                                     </div>
@@ -481,24 +564,33 @@
                 <div class="container-fluid no-gutters">
                     <div class="row no-gutters align-items-center">
                         <div class="col-lg-6">
-                            <section class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings" data-arts-os-animation="data-arts-os-animation">
+                            <section
+                                class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
                                     <div class="section__headline mb-1 mb-md-2"></div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
                                         <h2>Multimedia Artforms</h2>
                                     </div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines" data-split-text-set="lines">
-                                        <p>Expression of biosignals as generative art, capturing dynamics of signals into melodies and visual arts for encoding in the blockchain as NFT. Save your unique moments in your life as NFT in your senseplay wallet. The device helps you tell your inner story by listening and experiencing you in a different way.</p>
+                                    <div class="section-content__text split-text js-split-text mt-1"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>Expression of biosignals as generative art, capturing dynamics of signals
+                                            into melodies and visual arts for encoding in the blockchain as NFT. Save
+                                            your unique moments in your life as NFT in your senseplay wallet. The device
+                                            helps you tell your inner story by listening and experiencing you in a
+                                            different way.</p>
                                     </div>
                                 </div>
                             </section>
                         </div>
                         <div class="col-lg-6">
                             <section class="section section-image section_h-800">
-                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                                    data-arts-parallax-factor="0.15">
                                     <div>
                                         <div class="lazy-bg" data-src="img/assets/project7/img-7-3.jpg"></div>
                                     </div>
@@ -512,25 +604,36 @@
                 <div class="container-fluid no-gutters">
                     <div class="row no-gutters align-items-center">
                         <div class="col-lg-6 order-lg-2">
-                            <section class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings" data-arts-os-animation="data-arts-os-animation">
+                            <section
+                                class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
                                     <div class="section__headline mb-1 mb-md-2"></div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text mb-1" data-split-text-type="lines,words" data-split-text-set="words">
+                                    <div class="section-content__heading split-text js-split-text mb-1"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
                                         <h2>AR / VR Immersions</h2>
                                     </div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                                        <p>Our interaction with games will be transformed as we are able to detect when a user is becoming increasingly relaxed to modify in-game parameters (such as number of enemies, type of enemies, environmental lighting levels, or the sounds which are played to the user) so as to reduce the intensity of the gaming experience and put the user more at ease."</p>
-                                        <p>It also notes that the opposite could be true, and the game could step up the difficulty or intensity if it senses that a player is being sufficiently excited.</p>
+                                    <div class="section-content__text split-text js-split-text"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>Our interaction with games will be transformed as we are able to detect when
+                                            a user is becoming increasingly relaxed to modify in-game parameters (such
+                                            as number of enemies, type of enemies, environmental lighting levels, or the
+                                            sounds which are played to the user) so as to reduce the intensity of the
+                                            gaming experience and put the user more at ease."</p>
+                                        <p>It also notes that the opposite could be true, and the game could step up the
+                                            difficulty or intensity if it senses that a player is being sufficiently
+                                            excited.</p>
                                     </div>
                                 </div>
                             </section>
                         </div>
                         <div class="col-lg-6 order-lg-1 bg-white">
                             <section class="section section-image section_h-800">
-                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                                    data-arts-parallax-factor="0.15">
                                     <div>
                                         <div class="lazy-bg" data-src="img/assets/project7/img-7-5.jpg"></div>
                                     </div>
@@ -540,26 +643,34 @@
                     </div>
                 </div>
                 <!-- - sections CONTENT & IMAGE #3 -->
-               
+
                 <!-- sections CONTENT & IMAGE #4 -->
                 <div class="container-fluid no-gutters">
                     <div class="row no-gutters align-items-center">
                         <div class="col-lg-6">
-                            <section class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings" data-arts-os-animation="data-arts-os-animation">
+                            <section
+                                class="section section-content clearfix pt-medium pb-medium container-fluid container-fluid_paddings"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
                                     <div class="section__headline mb-1 mb-md-2"></div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
                                         <h2>Sense.chat</h2>
                                     </div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__text split-text js-split-text mt-1" data-split-text-type="lines" data-split-text-set="lines">
-                                        <p>Connect senseplay device to your smartphone. Start streaming your real-time heartbeat with your loved ones while texting.</p>
+                                    <div class="section-content__text split-text js-split-text mt-1"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>Connect senseplay device to your smartphone. Start streaming your real-time
+                                            heartbeat with your loved ones while texting.</p>
                                         <p>Share your live emotions to explore new realms personal conversations.</p>
                                     </div>
                                     <div class="w-100">
-                                        <div class="section-masthead__wrapper-button mt-xsmall"><a class="button button_bordered button_dark" data-hover="PREVIEW" href="https://www.figma.com/proto/1W1JXlXDjEVa4Bf8s0u3B3/Device-Mockups-Community?node-id=234%3A10&viewport=-894%2C-756%2C0.2799384295940399&scaling=scale-down" target="_blank"><span class="button__label-hover">SENSE.CHAT</span></a>
+                                        <div class="section-masthead__wrapper-button mt-xsmall"><a
+                                                class="button button_bordered button_dark" data-hover="PREVIEW"
+                                                href="https://www.figma.com/proto/1W1JXlXDjEVa4Bf8s0u3B3/Device-Mockups-Community?node-id=234%3A10&viewport=-894%2C-756%2C0.2799384295940399&scaling=scale-down"
+                                                target="_blank"><span class="button__label-hover">SENSE.CHAT</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -567,7 +678,8 @@
                         </div>
                         <div class="col-lg-6">
                             <section class="section section-image section_h-800">
-                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                                    data-arts-parallax-factor="0.15">
                                     <div>
                                         <div class="lazy-bg" data-src="img/assets/project7/img-7-6.png"></div>
                                     </div>
@@ -578,7 +690,10 @@
                 </div>
                 <!-- - sections CONTENT & IMAGE #2 -->
                 <!-- section VIDEO -->
-                <section class="section section-video section-content section-image js-gallery section-offset offset_bottom container-fluid bg-dark-3 pt-medium mb-medium" data-arts-os-animation="data-arts-os-animation" data-grid-columns="1" data-grid-tablet="1" data-grid-mobile="1" data-arts-theme-text="light">
+                <section
+                    class="section section-video section-content section-image js-gallery section-offset offset_bottom container-fluid bg-dark-3 pt-medium mb-medium"
+                    data-arts-os-animation="data-arts-os-animation" data-grid-columns="1" data-grid-tablet="1"
+                    data-grid-mobile="1" data-arts-theme-text="light">
                     <div class="section-offset__content">
                         <header class="section-video__header text-center pb-small">
                             <div class="container">
@@ -586,20 +701,27 @@
                                     <div class="col-lg-8">
                                         <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
                                         <div class="w-100"></div>
-                                        <div class="section-content__heading split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
+                                        <div class="section-content__heading split-text js-split-text"
+                                            data-split-text-type="lines" data-split-text-set="lines">
                                             <h2>It's Time to PLAY!</h2>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </header>
-                        <div class="section-video__container section section_h-700 section-content__image"><a class="section-video__link" href="img/assets/sectionVideo/video-1.mp4" data-autoplay="data-autoplay">
-                                <div class="section-video__link-inner" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="0" data-arts-cursor-label="Play" data-arts-cursor-hide-native="true" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                        <div class="section-video__container section section_h-700 section-content__image"><a
+                                class="section-video__link" href="img/assets/sectionVideo/video-1.mp4"
+                                data-autoplay="data-autoplay">
+                                <div class="section-video__link-inner" data-arts-cursor="data-arts-cursor"
+                                    data-arts-cursor-scale="0" data-arts-cursor-label="Play"
+                                    data-arts-cursor-hide-native="true"
+                                    data-arts-cursor-magnetic="data-arts-cursor-magnetic">
                                     <div class="section-video__icon material-icons">play_arrow</div>
                                 </div>
                             </a>
                             <div class="section__bg">
-                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
+                                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                                    data-arts-parallax-factor="0.15">
                                     <div>
                                         <div class="lazy-bg" data-src="img/assets/project7/img-7-4.jpg"></div>
                                     </div>
@@ -614,12 +736,14 @@
                 <div class="container section pt-medium pb-medium">
                     <div class="row">
                         <div class="col">
-                            <section class="section section-content clearfix text-center" data-arts-os-animation="data-arts-os-animation">
+                            <section class="section section-content clearfix text-center"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
                                     <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
+                                    <div class="section-content__heading split-text js-split-text"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
                                         <h2>Features</h2>
                                     </div>
                                 </div>
@@ -628,21 +752,26 @@
                     </div>
                     <div class="row justify-content-between mt-small">
                         <div class="col-lg-6">
-                            <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text mb-0-5" data-split-text-type="lines,words" data-split-text-set="words">
+                                    <div class="section-content__heading split-text js-split-text mb-0-5"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
                                         <h4>HRV SENSOR</h4>
                                     </div>
                                 </div>
                             </section>
                         </div>
                         <div class="col-lg-6">
-                            <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
-                                    <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                                        <p>High-accuracy digital pulse oximetry sensor for Heart rate variability measurement.</p>
+                                    <div class="section-content__text split-text js-split-text"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>High-accuracy digital pulse oximetry sensor for Heart rate variability
+                                            measurement.</p>
                                     </div>
                                 </div>
                             </section>
@@ -650,21 +779,26 @@
                     </div>
                     <div class="row justify-content-between mt-small">
                         <div class="col-lg-6">
-                            <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text mb-0-5" data-split-text-type="lines,words" data-split-text-set="words">
+                                    <div class="section-content__heading split-text js-split-text mb-0-5"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
                                         <h4>GSR SENSOR</h4>
                                     </div>
                                 </div>
                             </section>
                         </div>
                         <div class="col-lg-6">
-                            <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
-                                    <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                                        <p>For measuring the speed of responses from the autonomic nervous system in real-time,A n important indicator of our bodies stress level.</p>
+                                    <div class="section-content__text split-text js-split-text"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>For measuring the speed of responses from the autonomic nervous system in
+                                            real-time,A n important indicator of our bodies stress level.</p>
                                     </div>
                                 </div>
                             </section>
@@ -672,21 +806,26 @@
                     </div>
                     <div class="row justify-content-between mt-small">
                         <div class="col-lg-6">
-                            <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
-                                    <div class="section-content__heading split-text js-split-text mb-0-5" data-split-text-type="lines,words" data-split-text-set="words">
+                                    <div class="section-content__heading split-text js-split-text mb-0-5"
+                                        data-split-text-type="lines,words" data-split-text-set="words">
                                         <h4>LED FEEDBACK</h4>
                                     </div>
                                 </div>
                             </section>
                         </div>
                         <div class="col-lg-6">
-                            <section class="section section-content clearfix" data-arts-os-animation="data-arts-os-animation">
+                            <section class="section section-content clearfix"
+                                data-arts-os-animation="data-arts-os-animation">
                                 <div class="section-content__inner">
                                     <div class="w-100"></div>
-                                    <div class="section-content__text split-text js-split-text" data-split-text-type="lines" data-split-text-set="lines">
-                                        <p>Real-time LED feedback from the device helps user’s to be aware of their current state through the emotional indices measured by the sensor.</p>
+                                    <div class="section-content__text split-text js-split-text"
+                                        data-split-text-type="lines" data-split-text-set="lines">
+                                        <p>Real-time LED feedback from the device helps user’s to be aware of their
+                                            current state through the emotional indices measured by the sensor.</p>
                                     </div>
                                 </div>
                             </section>
@@ -695,10 +834,12 @@
                 </div>
                 <!-- - section CONTENT #2 -->
                 <!-- section NAV PROJECTS -->
-                <section class="container-fluid section section-nav-projects section-fullheight text-center" data-arts-os-animation="data-arts-os-animation">
+                <section class="container-fluid section section-nav-projects section-fullheight text-center"
+                    data-arts-os-animation="data-arts-os-animation">
                     <div class="section-fullheight__inner section-nav-projects__inner_actual">
                         <div class="section__divider section__divider_top"></div>
-                        <header class="section-nav-projects__header"><a class="section-nav-projects__link" href="project-details-10-halfscreen-left-right.html" data-pjax-link="flyingImage">
+                        <header class="section-nav-projects__header"><a class="section-nav-projects__link"
+                                href="project-details-10-halfscreen-left-right.html" data-pjax-link="flyingImage">
                                 <div class="section-nav-projects__subheading small-caps mb-1 mb-md-2">What is </div>
                                 <h2 class="section-nav-projects__heading h1 mt-0 mb-0">Inside</h2>
                             </a></header>
@@ -713,26 +854,38 @@
                                 <!-- - curved label -->
                                 <!-- geometry wrapper -->
                                 <div class="circle-button__inner">
-                                    <div class="circle-button__circle" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0">
-                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <div class="circle-button__circle" data-arts-cursor="data-arts-cursor"
+                                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0">
+                                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
                                         </svg>
                                     </div>
                                     <!-- browsers with touch support -->
                                     <div class="circle-button__icon circle-button__icon-touch">
-                                        <svg enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z"></path>
+                                        <svg enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64"
+                                            width="512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m32 8c-1.104 0-2 .896-2 2v39.899l-14.552-15.278c-.761-.799-2.026-.832-2.828-.069-.8.762-.831 2.027-.069 2.827l16.62 17.449c.756.756 1.76 1.172 2.829 1.172 1.068 0 2.073-.416 2.862-1.207l16.586-17.414c.762-.8.73-2.065-.069-2.827-.799-.763-2.065-.731-2.827.069l-14.552 15.342v-39.963c0-1.104-.896-2-2-2z">
+                                            </path>
                                         </svg>
                                     </div>
                                     <!-- - browsers with touch support -->
                                     <!-- browsers without touch support -->
                                     <div class="circle-button__icon circle-button__icon-mouse">
-                                        <svg class="svg-mouse" width="23px" height="35px" viewBox="0 0 23 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <svg class="svg-mouse" width="23px" height="35px" viewBox="0 0 23 35"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <!-- border -->
-                                            <path class="svg-mouse__border" d="M11.5,0 C5.15875132,0 0,5.23135343 0,11.6610111 L0,23.3396542 C0,29.7691456 5.15875132,35 11.5,35 C17.8412487,35 23,29.7693119 23,23.3396542 L23,11.6610111 C23,5.23135343 17.8410847,0 11.5,0 Z M21.7222404,23.3396542 C21.7222404,29.0545544 17.136538,33.7037222 11.5,33.7037222 C5.86346203,33.7037222 1.27775956,29.0545544 1.27775956,23.3396542 L1.27775956,11.6610111 C1.27775956,5.946111 5.86346203,1.29627781 11.5,1.29627781 C17.136538,1.29627781 21.7222404,5.94594466 21.7222404,11.6610111 L21.7222404,23.3396542 Z"></path>
+                                            <path class="svg-mouse__border"
+                                                d="M11.5,0 C5.15875132,0 0,5.23135343 0,11.6610111 L0,23.3396542 C0,29.7691456 5.15875132,35 11.5,35 C17.8412487,35 23,29.7693119 23,23.3396542 L23,11.6610111 C23,5.23135343 17.8410847,0 11.5,0 Z M21.7222404,23.3396542 C21.7222404,29.0545544 17.136538,33.7037222 11.5,33.7037222 C5.86346203,33.7037222 1.27775956,29.0545544 1.27775956,23.3396542 L1.27775956,11.6610111 C1.27775956,5.946111 5.86346203,1.29627781 11.5,1.29627781 C17.136538,1.29627781 21.7222404,5.94594466 21.7222404,11.6610111 L21.7222404,23.3396542 Z">
+                                            </path>
                                             <!-- - border -->
                                             <!-- wheel -->
-                                            <path class="svg-mouse__wheel" d="M11.5,4 C11.2238902,4 11,4.28321727 11,4.63321727 L11,10.3667827 C11,10.7167827 11.2238902,11 11.5,11 C11.7761098,11 12,10.7167827 12,10.3667827 L12,4.63321727 C11.9998717,4.28321727 11.7761098,4 11.5,4 Z"></path>
+                                            <path class="svg-mouse__wheel"
+                                                d="M11.5,4 C11.2238902,4 11,4.28321727 11,4.63321727 L11,10.3667827 C11,10.7167827 11.2238902,11 11.5,11 C11.7761098,11 12,10.7167827 12,10.3667827 L12,4.63321727 C11.9998717,4.28321727 11.7761098,4 11.5,4 Z">
+                                            </path>
                                             <!-- - wheel -->
                                         </svg>
                                     </div>
@@ -744,7 +897,9 @@
                     </div>
                     <div class="container section-nav-projects__next-image section-fullheight__inner">
                         <div class="section-nav-projects__wrapper-image js-transition-img overflow">
-                            <div class="lazy js-transition-img__transformed-el"><img class="of-cover" src="#" data-src="img/assets/projects/project-10.jpg" alt="" width="1920" height="1280" /></div>
+                            <div class="lazy js-transition-img__transformed-el"><img class="of-cover" src="#"
+                                    data-src="img/assets/projects/project-10.jpg" alt="" width="1920" height="1280" />
+                            </div>
                         </div>
                     </div>
                     <div class="section-fullheight__inner hidden"></div>
@@ -778,8 +933,14 @@
                 <!-- top bar -->
                 <div class="pswp__top-bar">
                     <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.2" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"></button>
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.2" data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-hide-native="true"></button>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"
+                        data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.2"
+                        data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                        data-arts-cursor-hide-native="true"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"
+                        data-arts-cursor="data-arts-cursor" data-arts-cursor-scale="1.2"
+                        data-arts-cursor-magnetic="data-arts-cursor-magnetic"
+                        data-arts-cursor-hide-native="true"></button>
                     <div class="pswp__preloader">
                         <div class="pswp__preloader__icn">
                             <div class="pswp__preloader__cut">
@@ -791,8 +952,11 @@
                 <!-- - top bar -->
                 <!-- left arrow -->
                 <div class="pswp__button pswp__button--arrow--left">
-                    <div class="arrow arrow-left js-arrow" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <div class="arrow arrow-left js-arrow" data-arts-cursor="data-arts-cursor"
+                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
                             <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
                         </svg>
                         <div class="arrow__pointer arrow-left__pointer"></div>
@@ -802,8 +966,11 @@
                 <!-- - left arrow -->
                 <!-- right arrow -->
                 <div class="pswp__button pswp__button--arrow--right">
-                    <div class="arrow arrow-right js-arrow" data-arts-cursor="data-arts-cursor" data-arts-cursor-hide-native="true" data-arts-cursor-scale="0" data-arts-cursor-magnetic="data-arts-cursor-magnetic">
-                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <div class="arrow arrow-right js-arrow" data-arts-cursor="data-arts-cursor"
+                        data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
+                        data-arts-cursor-magnetic="data-arts-cursor-magnetic">
+                        <svg class="svg-circle" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
                             <circle class="circle" cx="30" cy="30" r="29" fill="none"></circle>
                         </svg>
                         <div class="arrow__pointer arrow-right__pointer"></div>
@@ -936,7 +1103,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwR_TrF6h7-pMxkKv_q2t8BXX3w6QuFOc" async></script>
     <script async src="//static.zotabox.com/4/b/4b7dfa2e94fcb8e833bce42fcbcd1499/widgets.js"></script>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JF7SC3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JF7SC3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 </body>
 

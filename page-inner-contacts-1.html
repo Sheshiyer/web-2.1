@@ -51,24 +51,18 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
-  <!-- Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKY60XVQS"></script>
   <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5JF7SC3');
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NBKY60XVQS');
   </script>
-  <!-- End Google Tag Manager -->
 </head>
 
 <body>
@@ -382,7 +376,8 @@
                               <div class="figure-info split-text js-split-text" data-split-text-type="lines,words"
                                 data-split-text-set="words">
                                 <div class="figure-info__option small-caps">Pre-oreder</div>
-                                <div class="figure-info__value paragraph">Message on Telegram to book your Pre-order</div>
+                                <div class="figure-info__value paragraph">Message on Telegram to book your Pre-order
+                                </div>
                               </div>
                             </div>
                             <div class="section-properties__item my-2">
@@ -426,7 +421,9 @@
                 <div class="col-lg-4 order-lg-3">
                   <div class="bg-white h-100 d-flex flex-column justify-content-center py-3 container-fluid">
                     <section class="section section-form">
-                      <form class="form form-contact js-ajax-form bg-white" action="mail.php" method="POST" data-message-success="Thanks for your message! We will reply you as soon as possible." data-message-error="Something went wrong :( Please contact me directly at &lt;a href=&quot;mysesneplay@gmail.com&quot;&gt;mysesneplay@gmail.com&lt;/a&gt;">
+                      <form class="form form-contact js-ajax-form bg-white" action="mail.php" method="POST"
+                        data-message-success="Thanks for your message! We will reply you as soon as possible."
+                        data-message-error="Something went wrong :( Please contact me directly at &lt;a href=&quot;mysesneplay@gmail.com&quot;&gt;mysesneplay@gmail.com&lt;/a&gt;">
                         <!-- header -->
                         <div class="row form__row">
                           <div class="col form__col">
@@ -438,7 +435,9 @@
                         <div class="row form__row">
                           <div class="col form__col">
                             <label class="input-float js-input-float">
-                              <input class="input-float__input" type="text" name="visitor_name" required="required" data-msg="Please enter your name"/><span class="input-float__label">Your Name</span><span class="form__error"></span>
+                              <input class="input-float__input" type="text" name="visitor_name" required="required"
+                                data-msg="Please enter your name" /><span class="input-float__label">Your
+                                Name</span><span class="form__error"></span>
                             </label>
                           </div>
                         </div>
@@ -447,7 +446,9 @@
                         <div class="row form__row">
                           <div class="col form__col">
                             <label class="input-float js-input-float">
-                              <input class="input-float__input" type="email" name="visitor_email" required="required" data-msg="Please enter a correct e-mail"/><span class="input-float__label">Your E-mail</span><span class="form__error"></span>
+                              <input class="input-float__input" type="email" name="visitor_email" required="required"
+                                data-msg="Please enter a correct e-mail" /><span class="input-float__label">Your
+                                E-mail</span><span class="form__error"></span>
                             </label>
                           </div>
                         </div>
@@ -456,7 +457,9 @@
                         <div class="row form__row">
                           <div class="col form__col">
                             <label class="input-float js-input-float">
-                              <textarea class="input-float__input input-float__input_textarea" name="visitor_msg"></textarea><span class="input-float__label">Your Message</span><span class="form__error"></span>
+                              <textarea class="input-float__input input-float__input_textarea"
+                                name="visitor_msg"></textarea><span class="input-float__label">Your Message</span><span
+                                class="form__error"></span>
                             </label>
                           </div>
                         </div>
@@ -464,7 +467,8 @@
                         <!-- submit -->
                         <div class="row form__row">
                           <div class="col form__col form__col_submit">
-                            <button class="button button_solid button_black button_fullwidth" data-hover="Send Message"><span class="button__label-hover">Send Message</span></button>
+                            <button class="button button_solid button_black button_fullwidth"
+                              data-hover="Send Message"><span class="button__label-hover">Send Message</span></button>
                           </div>
                         </div>
                         <!-- - submit -->

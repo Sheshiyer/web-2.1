@@ -37,38 +37,32 @@
   <!-- Hotjar Tracking Code for www.senseplay.me -->
   <script>
     (function (h, o, t, j, a, r) {
-        h.hj = h.hj || function () {
-            (h.hj.q = h.hj.q || []).push(arguments)
-        };
-        h._hjSettings = {
-            hjid: 2277378,
-            hjsv: 6
-        };
-        a = o.getElementsByTagName('head')[0];
-        r = o.createElement('script');
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 2277378,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-</script>
-<!-- Google Tag Manager -->
-<script>
-    (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5JF7SC3');
-</script>
-<!-- End Google Tag Manager -->
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKY60XVQS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NBKY60XVQS');
+  </script>
 </head>
 <header class="header header_menu-right header_fixed container-fluid js-header-sticky" id="page-header"
   data-arts-theme-text="light" data-arts-header-sticky-theme="bg-white" data-arts-header-logo="primary"
@@ -120,16 +114,18 @@
     <!-- fullscreen menu -->
     <div class="header__wrapper-menu">
       <ul class="menu-overlay js-menu-overlay">
-        
+
         <li class="menu-item"><a class="h2" href="project-details-2-bottom-center.html" data-pjax-link="overlayMenu">
             <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Use Case</div>
           </a>
         </li>
-        <li class="menu-item"><a class="h2" href="project-details-3-halfscreen-left-right.html" data-pjax-link="overlayMenu">
-          <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Product</div>
-        </a>
-      </li>
-        <li class="menu-item"><a class="h2" href="project-details-4-halfscreen-left-left.html" data-pjax-link="overlayMenu">
+        <li class="menu-item"><a class="h2" href="project-details-3-halfscreen-left-right.html"
+            data-pjax-link="overlayMenu">
+            <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Product</div>
+          </a>
+        </li>
+        <li class="menu-item"><a class="h2" href="project-details-4-halfscreen-left-left.html"
+            data-pjax-link="overlayMenu">
             <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">About</div>
           </a>
         </li>
@@ -348,12 +344,15 @@
           <div class="section-masthead__inner section-fullheight__inner container-fluid">
             <header class="row section-masthead__header justify-content-center">
               <div class="col">
-                <div class="section-masthead__heading split-text js-split-text overflow" data-split-text-type="lines,chars" data-split-text-set="chars">
+                <div class="section-masthead__heading split-text js-split-text overflow"
+                  data-split-text-type="lines,chars" data-split-text-set="chars">
                   <h1 class="xl mt-0 mb-0">Sense.Play</h1>
                 </div>
                 <div class="w-100">
-                  <div class="section-masthead__subheading h4 mt-0-5 split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words"><span>Self Awareness Technology</span></div>
-                </div>                 
+                  <div class="section-masthead__subheading h4 mt-0-5 split-text js-split-text"
+                    data-split-text-type="lines,words" data-split-text-set="words"><span>Self Awareness
+                      Technology</span></div>
+                </div>
               </div>
               <div class="section-masthead__wrapper-scroll-down section-masthead__wrapper-scroll-down_center">
                 <div class="circle-button js-circle-button" data-arts-os-animation="true">
@@ -419,7 +418,7 @@
             <!-- - overlay -->
           </div>
         </section>
-         
+
         <!-- - section MASTHEAD -->
         <!-- - intro -->
         <section id="intro">
@@ -475,7 +474,7 @@
                           </div>
                         </div>
                       </aside>
-                       
+
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -498,8 +497,8 @@
             <div class="section-demo__wrapper-button section-demo__wrapper-button_right d-none d-lg-flex"><a
                 class="circle-button circle-button_link js-circle-button" data-arts-cursor="data-arts-cursor"
                 data-arts-cursor-hide-native="true" data-arts-cursor-scale="0"
-                data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-icon="add"
-                href="#demo" data-arts-os-animation="true">
+                data-arts-cursor-magnetic="data-arts-cursor-magnetic" data-arts-cursor-icon="add" href="#demo"
+                data-arts-os-animation="true">
                 <!-- curved label -->
                 <div class="circle-button__outer">
                   <div class="circle-button__wrapper-label">
@@ -552,8 +551,9 @@
                         </div>
                         <div class="w-100">
                           <div class="section-masthead__wrapper-button mt-xsmall"><a
-                              class="button button_bordered button_dark" data-hover="Explore Now" href="project-details-3-halfscreen-left-right.html"><span
-                                class="button__label-hover">Be Curious</span></a>
+                              class="button button_bordered button_dark" data-hover="Explore Now"
+                              href="project-details-3-halfscreen-left-right.html"><span class="button__label-hover">Be
+                                Curious</span></a>
                           </div>
                         </div>
                         <div class="mb-small"></div>
@@ -790,7 +790,7 @@
           </section>
           <!-- - section FEATURES -->
         </div>
-        
+
         <section class="section section-content clearfix bg-dark-1 pt-medium pb-small text-center"
           data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light" id="demo">
           <div class="section-content__inner">
@@ -956,10 +956,10 @@
                       <!-- - caption -->
                     </a></div>
                 </div>
-              </div>                            
+              </div>
             </div>
           </div>
-           
+
         </section>
         <section class="section section-content clearfix bg-dark pt-medium pb-small text-center"
           data-arts-os-animation="data-arts-os-animation">
@@ -974,12 +974,13 @@
           </div>
         </section>
         <!-- section earlyadopters -->
-        <section class="section section-logos section-grid pb-medium" data-arts-os-animation="data-arts-os-animation" data-grid-columns="3" data-grid-columns-tablet="2" data-grid-columns-mobile="1">
+        <section class="section section-logos section-grid pb-medium" data-arts-os-animation="data-arts-os-animation"
+          data-grid-columns="3" data-grid-columns-tablet="2" data-grid-columns-mobile="1">
           <div class="container">
             <div class="row row-gutters justify-content-center">
               <div class="col-lg-3 col-gutters">
                 <div class="section-grid__item">
-                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-1.png" alt=""/>
+                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-1.png" alt="" />
                     <div class="figure-logo__description">
                       <p>Soulfie Intl.</p>
                       <div class="figure-logo__line"></div>
@@ -989,7 +990,7 @@
               </div>
               <div class="col-lg-3 col-gutters">
                 <div class="section-grid__item">
-                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-2.png" alt=""/>
+                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-2.png" alt="" />
                     <div class="figure-logo__description">
                       <p>Connected Experience</p>
                       <div class="figure-logo__line"></div>
@@ -999,7 +1000,7 @@
               </div>
               <div class="col-lg-3 col-gutters">
                 <div class="section-grid__item">
-                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-3.png" alt=""/>
+                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-3.png" alt="" />
                     <div class="figure-logo__description">
                       <p>Our World</p>
                       <div class="figure-logo__line"></div>
@@ -1009,7 +1010,7 @@
               </div>
               <div class="col-lg-3 col-gutters">
                 <div class="section-grid__item">
-                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-4.png" alt=""/>
+                  <div class="figure-logo grayscale bg-dark"><img src="img/assets/sectionLogos/logo-4.png" alt="" />
                     <div class="figure-logo__description">
                       <p>Sensistan </p>
                       <div class="figure-logo__line"></div>
@@ -1022,50 +1023,50 @@
         </section>
         <!-- - section earlyadopters -->
         <section id=" section footer_cta dark-4">
-          <div class="bg-white text-center section-scroll" data-arts-theme-text="dark" data-arts-scroll-theme-text="light"
-          data-arts-default-theme="bg-white" data-arts-scroll-theme="bg-dark-1" data-arts-scroll-trigger-hook="0.0"
-          data-arts-scroll-offset="-100">
+          <div class="bg-white text-center section-scroll" data-arts-theme-text="dark"
+            data-arts-scroll-theme-text="light" data-arts-default-theme="bg-white" data-arts-scroll-theme="bg-dark-1"
+            data-arts-scroll-trigger-hook="0.0" data-arts-scroll-offset="-100">
 
 
-          <!-- section CTA -->
-          <section class="section section-cta text-center section-content pt-medium pb-large bg-dark-1"
-            data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light">
-            <div class="section__content">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-lg-10">
-                    <div class="section-cta__heading split-text js-split-text" data-split-text-type="lines"
-                      data-split-text-set="lines">
-                      <h2 class="h2 mt-0 mt-md-1 mb-1">Exclusive access to Senseplay Ecosystem for the first 100 backers only</h2>
+            <!-- section CTA -->
+            <section class="section section-cta text-center section-content pt-medium pb-large bg-dark-1"
+              data-arts-os-animation="data-arts-os-animation" data-arts-theme-text="light">
+              <div class="section__content">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                      <div class="section-cta__heading split-text js-split-text" data-split-text-type="lines"
+                        data-split-text-set="lines">
+                        <h2 class="h2 mt-0 mt-md-1 mb-1">Exclusive access to Senseplay Ecosystem for the first 100
+                          backers only</h2>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-lg-10">
-                    <div class="section-content__button"><a class="button button_solid button_black"
-                        data-hover="10 Backers"
-                        href="project-details-3-halfscreen-left-right.html"
-                        ><span class="button__label-hover">Pre Order</span></a>
+                    <div class="col-12 col-lg-10">
+                      <div class="section-content__button"><a class="button button_solid button_black"
+                          data-hover="10 Backers" href="project-details-3-halfscreen-left-right.html"><span
+                            class="button__label-hover">Pre Order</span></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="section__bg">
-              <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
-                data-arts-parallax-factor="0.15">
-                <div>
-                  <div class="lazy-bg" data-src="img/assets/sectionDemo/bg-2.png"></div>
+              <div class="section__bg">
+                <div class="section-image__wrapper" data-arts-parallax="data-arts-parallax"
+                  data-arts-parallax-factor="0.15">
+                  <div>
+                    <div class="lazy-bg" data-src="img/assets/sectionDemo/bg-2.png"></div>
+                  </div>
                 </div>
+                <!-- overlay-->
+                <div class="overlay overlay_top-dark section-masthead__overlay"></div>
+                <!-- - overlay -->
               </div>
-              <!-- overlay-->
-              <div class="overlay overlay_top-dark section-masthead__overlay"></div>
-              <!-- - overlay -->
-            </div>
-          </section>
-          <!-- - section CTA -->
-        </div>
+            </section>
+            <!-- - section CTA -->
+          </div>
 
         </section>
-        
+
       </main>
       <!-- PAGE FOOTER -->
       <!-- - PAGE FOOTER -->
